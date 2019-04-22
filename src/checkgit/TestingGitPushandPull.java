@@ -21,8 +21,8 @@ public class TestingGitPushandPull {
 		driver.manage().deleteAllCookies();
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
-		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 		System.out.println(allLinks.size());
